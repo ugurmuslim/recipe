@@ -6,4 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  navigateBar = 'recipes';
+  OnNavigateSelected(selectedNavigate: { name: string }) {
+    this.navigateBar = selectedNavigate.name;
+  }
 }
